@@ -1,2 +1,8 @@
+from django.contrib import admin
+from django.urls import path
+from . import views
 
-#urls.py
+urlpatterns = [
+    path('todo/',views.todo),
+    path('todo/<int:id>',views.singleTodo),
+]
