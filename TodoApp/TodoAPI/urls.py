@@ -3,6 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('todo/',views.todo),
-    path('todo/<int:id>',views.singleTodo),
+    path('list',views.todo, name='list'),
 ]
